@@ -13,21 +13,24 @@
 .hero-banner__button {
   display: block;
   margin: 0 auto;
-  padding: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 5rem;
   width: max-content;
   background: white;
   color: black;
-  font-size: 10rem;
-  font-weight: 900;
-  border-radius: 2rem;
+  font-size: 5rem;
+  /* font-weight: 900; */
+  border-radius: 1rem;
   text-decoration: none;
   mix-blend-mode: screen;
+  line-height: 5rem;
 }
 
 .banner__logo {
   max-width: 60rem;
   margin: 0 auto;
-  margin-left: 8%;
+  padding-left: 5%;
+  /* margin-left: 8%; */
 }
 
 .banner__logo img {
