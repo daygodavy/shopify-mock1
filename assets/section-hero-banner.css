@@ -1,0 +1,37 @@
+.hero-banner {
+  /* NOTE: 100vh may cause issues on safari for iPhone due to url browser being at the bottom of the screen */
+  height: 100vh;
+  border: solid 2px red;
+  padding: 2rem;
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+
+  /* NOTE: increase the size of hero banner so background-size cover isn't cropped */
+  background-size: cover;
+}
+
+.hero-banner__button {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  width: max-content;
+  background: white;
+  color: black;
+  font-size: 10rem;
+  font-weight: 900;
+  border-radius: 2rem;
+  text-decoration: none;
+  mix-blend-mode: screen;
+}
+
+.banner__logo {
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-left: 8%;
+}
+
+.banner__logo img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}

@@ -1395,12 +1395,14 @@ button.shopify-payment-button__button--unbranded {
   line-height: calc(1 + 0.2 / var(--font-body-scale));
 }
 
+
+/* CUSTOM1 */
 .button.button--primary {
   font-size: 2rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
   background-color: white;
   color: black;
-  mix-blend-mode: lighten;
+  /* mix-blend-mode: lighten; */
 }
 
 .button--tertiary {
