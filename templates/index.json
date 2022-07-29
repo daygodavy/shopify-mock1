@@ -5,76 +5,12 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/wotownBG_76314c46-273b-42a0-ba79-66e86725ccbf.jpg",
         "logo": "shopify:\/\/shop_images\/Wotown_Stamp_CROP_af53a928-5076-47f0-9410-186971200758.png",
-        "image_overlay_opacity": 0
-      }
-    },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "8998394b-399e-48ca-9bd4-0b3aab2884d4": {
-          "type": "image",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Wotown_Stamp_CROP_af53a928-5076-47f0-9410-186971200758.png"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "WOTOWN",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "HOME",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "WORKINGONAHILL",
-            "button_link_2": "shopify:\/\/collections\/all",
-            "button_style_secondary_2": false,
-            "button_label_3": "FEATURED BRANDS",
-            "button_link_3": "shopify:\/\/collections\/all",
-            "button_style_secondary_3": false,
-            "button_label_4": "VINTAGE",
-            "button_link_4": "shopify:\/\/collections\/all",
-            "button_style_secondary_4": false,
-            "button_label_5": "INFO",
-            "button_link_5": "shopify:\/\/collections\/all",
-            "button_style_secondary_5": false
-          }
-        }
-      },
-      "block_order": [
-        "8998394b-399e-48ca-9bd4-0b3aab2884d4",
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/wotownBG_76314c46-273b-42a0-ba79-66e86725ccbf.jpg",
-        "image_overlay_opacity": 30,
-        "image_height": "large",
-        "adapt_height_first_image": true,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "image_overlay_opacity": 0,
+        "menu": "main-menu"
       }
     }
   },
   "order": [
-    "165904500270effb70",
-    "image_banner"
+    "165904500270effb70"
   ]
 }

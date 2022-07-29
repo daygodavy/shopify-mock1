@@ -1,7 +1,6 @@
 .hero-banner {
   /* NOTE: 100vh may cause issues on safari for iPhone due to url browser being at the bottom of the screen */
   height: 100vh;
-  border: solid 2px red;
   padding: 2rem;
   /* background-size: contain; */
   /* background-repeat: no-repeat; */
@@ -10,7 +9,7 @@
   background-size: cover;
 }
 
-.hero-banner__button {
+/*.hero-banner__button {
   display: block;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -19,12 +18,12 @@
   background: white;
   color: black;
   font-size: 5rem;
-  /* font-weight: 900; */
+  font-weight: 900;
   border-radius: 1rem;
   text-decoration: none;
   mix-blend-mode: screen;
   line-height: 5rem;
-}
+}*/
 
 .banner__logo {
   max-width: 60rem;
@@ -37,4 +36,40 @@
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+
+.hero-nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin: 0 auto;
+} 
+
+.nav-item {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  background: white;
+  color: black;
+  font-size: 4rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  text-decoration: none;
+  mix-blend-mode: screen;
+}
+
+.nav-item--child {
+  margin-bottom: 1rem;
+}
+
+.hero-nav-menu li:last-child .nav-item--child {
+  margin-bottom: 2rem;
+}
+
+.nav-item--child {
+  font-size: 2rem;
 }
