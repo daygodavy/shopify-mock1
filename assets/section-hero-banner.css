@@ -1,6 +1,6 @@
 .hero-banner {
   /* NOTE: 100vh may cause issues on safari for iPhone due to url browser being at the bottom of the screen */
-  height: 100vh;
+  height: 120vh;
   padding: 2rem;
   /* background-size: contain; */
   /* background-repeat: no-repeat; */
