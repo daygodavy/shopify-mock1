@@ -83,6 +83,7 @@
 
 .card__inner {
   width: 100%;
+  background-color: transparent;
 }
 
 .card--media .card__inner .card__content {

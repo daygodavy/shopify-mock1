@@ -63,13 +63,17 @@
 }
 
 .nav-item--child {
-  margin-bottom: 1rem;
+  margin-bottom: 1%;
+  font-size: 2rem;
+  mix-blend-mode: unset;
+  color: white;
+  background-color: transparent;
 }
 
 .hero-nav-menu li:last-child .nav-item--child {
   margin-bottom: 2rem;
 }
 
-.nav-item--child {
+/* .nav-item--child {
   font-size: 2rem;
-}
+} */
