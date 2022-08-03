@@ -36,11 +36,19 @@
     max-width: {{ section.settings.logo_width }}px;
   }
 
+
   @media screen and (min-width: 990px) {
-    header-drawer {
+    {% comment %} header-drawer {
       display: none;
+    } {% endcomment %}
+    .header__search {
+      display: none !important;
+    } 
+    .header--top-center *>.header__search {
+      display: inline-flex !important;
     }
   }
+
 
   .menu-drawer-container {
     display: flex;
@@ -391,6 +399,7 @@
       </h1>
     {%- endif -%}
 
+    {% comment %}
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="header__inline-menu">
@@ -489,6 +498,9 @@
         </nav>
       {%- endif -%}
     {%- endif -%}
+  {% endcomment %}
+
+
 
     <div class="header__icons">
       <details-modal class="header__search">
