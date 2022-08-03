@@ -3,7 +3,7 @@
     "165904500270effb70": {
       "type": "hero-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/wotownBG_76314c46-273b-42a0-ba79-66e86725ccbf.jpg",
+        "image": "shopify:\/\/shop_images\/wotownBGcrop.jpg",
         "logo": "shopify:\/\/shop_images\/Wotown_Stamp_CROP_af53a928-5076-47f0-9410-186971200758.png",
         "image_overlay_opacity": 0,
         "menu": "main-menu"

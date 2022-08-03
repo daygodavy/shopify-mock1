@@ -1,12 +1,34 @@
-.hero-banner {
-  /* NOTE: 100vh may cause issues on safari for iPhone due to url browser being at the bottom of the screen */
+
+/*.hero-banner {
   height: 120vh;
   padding: 2rem;
-  /* background-size: contain; */
-  /* background-repeat: no-repeat; */
-
-  /* NOTE: increase the size of hero banner so background-size cover isn't cropped */
   background-size: cover;
+}*/
+
+@media only screen and (max-width: 749px) {
+  .hero-banner{
+    height: 200vw;
+    width: 100vw;
+    padding: 1rem;
+    background-size: contain;
+
+    /* background-repeat: no-repeat;
+    background-size: 100vw 100%;
+    padding: 1rem; */
+   }
+}
+
+@media only screen and (min-width: 750px) {
+  .hero-banner{
+    /* NOTE: 100vh may cause issues on safari for iPhone due to url browser being at the bottom of the screen */
+    height: 120vh;
+    padding: 2rem;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+
+    /* NOTE: increase the size of hero banner so background-size cover isn't cropped */
+    background-size: cover;
+  }
 }
 
 /*.hero-banner__button {
@@ -29,6 +51,7 @@
   max-width: 60rem;
   margin: 0 auto;
   padding-left: 5%;
+  margin-bottom: 5rem;
   /* margin-left: 8%; */
 }
 
@@ -72,6 +95,15 @@
 
 .hero-nav-menu li:last-child .nav-item--child {
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 749px) {
+  .nav-item {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    
+    /* line-height: calc(1.9 + 0.8 / var(--font-body-scale)); */
+  }
 }
 
 /* .nav-item--child {

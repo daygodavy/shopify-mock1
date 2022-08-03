@@ -27,7 +27,8 @@
     </div>
   {%- endif -%}
 
-  <hero-nav>
+  {% comment %} how is hero-nav defined itself as a div/section? {% endcomment %}
+  <hero-nav> 
     <ul class="hero-nav-menu list-unstyled">
       {%- for link in section.settings.menu.links -%}
         <li>
