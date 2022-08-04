@@ -399,13 +399,25 @@
     {% comment %} <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset"> {% endcomment %}
       {%- if canonical_url contains 'collections' -%}
         {% liquid
-          assign collection_one = section.settings.collection_one.title | downcase | replace: ' ', '-'
-          assign collection_two = section.settings.collection_two.title | downcase | replace: ' ', '-'
+          assign collection_one = section.settings.collection_one.title | handleize
+          assign collection_two = section.settings.collection_two.title | handleize
+          assign collection_three = section.settings.collection_three.title | handleize
+          assign collection_four = section.settings.collection_four.title | handleize
+          assign collection_five = section.settings.collection_five.title | handleize
+          assign collection_six = section.settings.collection_six.title | handleize
 
           if canonical_url contains collection_one
             assign header_image = section.settings.collection_image_one
           elsif canonical_url contains collection_two
             assign header_image = section.settings.collection_image_two
+          elsif canonical_url contains collection_three
+            assign header_image = section.settings.collection_image_three
+          elsif canonical_url contains collection_four
+            assign header_image = section.settings.collection_image_four
+          elsif canonical_url contains collection_five
+            assign header_image = section.settings.collection_image_five
+          elsif canonical_url contains collection_six
+            assign header_image = section.settings.collection_image_six
           endif
         %}
         
@@ -847,6 +859,46 @@
       "type": "collection",
       "id": "collection_two",
       "label": "Collection two"
+    },
+    {
+      "type": "image_picker",
+      "id": "collection_image_three",
+      "label": "Collection image three"
+    },
+    {
+      "type": "collection",
+      "id": "collection_three",
+      "label": "Collection three"
+    },
+    {
+      "type": "image_picker",
+      "id": "collection_image_four",
+      "label": "Collection image four"
+    },
+    {
+      "type": "collection",
+      "id": "collection_four",
+      "label": "Collection four"
+    },
+    {
+      "type": "image_picker",
+      "id": "collection_image_five",
+      "label": "Collection image five"
+    },
+    {
+      "type": "collection",
+      "id": "collection_five",
+      "label": "Collection five"
+    },
+    {
+      "type": "image_picker",
+      "id": "collection_image_six",
+      "label": "Collection image six"
+    },
+    {
+      "type": "collection",
+      "id": "collection_six",
+      "label": "Collection six"
     },
     {
       "type": "range",
