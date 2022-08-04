@@ -49,6 +49,14 @@
     }
   }
 
+  @media screen and (min-width: 750px) {
+    .header {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: start !important;
+    }
+  }
+
 
   .menu-drawer-container {
     display: flex;
@@ -392,7 +400,7 @@
             assign header_image = section.settings.collection_image_two
           endif
         %}
-
+        
         {{ header_image | image_url: width: section.settings.width | image_tag:
           class: 'header__heading-logo',
           widths: '50, 100, 150, 200, 250, 300, 400, 500',
@@ -836,7 +844,7 @@
       "type": "range",
       "id": "logo_width",
       "min": 50,
-      "max": 250,
+      "max": 500,
       "step": 10,
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
