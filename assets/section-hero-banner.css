@@ -74,8 +74,10 @@
   display: flex;
   margin-bottom: 2rem;
   padding: 0 2rem;
+  padding-top: 1rem;
   background: white;
   color: black;
+  font-family: "Helvetica Neue Bold";
   font-size: 4rem;
   font-weight: 700;
   text-decoration: none;

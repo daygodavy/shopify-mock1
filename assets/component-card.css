@@ -6,8 +6,10 @@
 }
 
 .card {
-  text-align: var(--card-text-alignment);
+  /* text-align: var(--card-text-alignment); */
+  text-align: center;
   text-decoration: none;
+  margin-bottom: 0rem;
 }
 
 .card:not(.ratio) {
@@ -58,7 +60,9 @@
 }
 
 .card-information {
-  text-align: var(--card-text-alignment);
+  /* text-align: var(--card-text-alignment); */
+  text-align: center;
+  margin-top: 0%;
 }
 
 .card__media,
