@@ -397,15 +397,16 @@
       <h1 class="header__heading">
     {%- endif -%}
     {% comment %} <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset"> {% endcomment %}
+      {% liquid
+        assign collection_one = section.settings.collection_one.title | handleize
+        assign collection_two = section.settings.collection_two.title | handleize
+        assign collection_three = section.settings.collection_three.title | handleize
+        assign collection_four = section.settings.collection_four.title | handleize
+        assign collection_five = section.settings.collection_five.title | handleize
+        assign collection_six = section.settings.collection_six.title | handleize
+      %}
       {%- if canonical_url contains 'collections' -%}
         {% liquid
-          assign collection_one = section.settings.collection_one.title | handleize
-          assign collection_two = section.settings.collection_two.title | handleize
-          assign collection_three = section.settings.collection_three.title | handleize
-          assign collection_four = section.settings.collection_four.title | handleize
-          assign collection_five = section.settings.collection_five.title | handleize
-          assign collection_six = section.settings.collection_six.title | handleize
-
           if canonical_url contains collection_one
             assign header_image = section.settings.collection_image_one
           elsif canonical_url contains collection_two
@@ -428,7 +429,32 @@
           width: section.settings.logo_width,
           alt: logo_alt
         }}
-
+      
+      {%- elsif canonical_url contains 'products' -%}
+        {% liquid
+          assign curr_collection = product.collections[0].title | handleize
+          if curr_collection == collection_one
+            assign header_image = section.settings.collection_image_one
+          elsif curr_collection == collection_two
+            assign header_image = section.settings.collection_image_two
+          elsif curr_collection == collection_three
+            assign header_image = section.settings.collection_image_three
+          elsif curr_collection == collection_four
+            assign header_image = section.settings.collection_image_four
+          elsif curr_collection == collection_five
+            assign header_image = section.settings.collection_image_five
+          elsif curr_collection == collection_six
+            assign header_image = section.settings.collection_image_six
+          endif
+        %}
+        
+        {{ header_image | image_url: width: section.settings.width | image_tag:
+          class: 'header__heading-logo',
+          widths: '50, 100, 150, 200, 250, 300, 400, 500',
+          height: logo_height,
+          width: section.settings.logo_width,
+          alt: logo_alt
+        }}
       {%- else -%}
 
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
