@@ -431,6 +431,7 @@
         }}
       
       {%- elsif canonical_url contains 'products' -%}
+      {% comment %} LOGIC ASSUMES THAT EACH/ALL PRODUCTS BELONG TO ONLY ONE COLLECTION {% endcomment %}
         {% liquid
           assign curr_collection = product.collections[0].title | handleize
           if curr_collection == collection_one
