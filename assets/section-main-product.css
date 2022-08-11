@@ -279,6 +279,12 @@ fieldset.product-form__input .form__label {
   }
 }
 
+.product-form__submit.button--primary {
+  background-color: white;
+  color: black;
+  font-family: "Neue Montreal Bold";
+}
+
 /* Overrides */
 .shopify-payment-button__more-options {
   color: rgb(var(--color-foreground));
@@ -317,6 +323,7 @@ a.product__text {
 .product__title {
   word-break: break-word;
   margin-bottom: 1.5rem;
+  font-family: "Neue Montreal Bold";
 }
 
 .product__title > * {
