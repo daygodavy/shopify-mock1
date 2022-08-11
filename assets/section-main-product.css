@@ -155,6 +155,10 @@
   max-width: 37rem;
   min-width: fit-content;
   border: none;
+
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
 }
 
 variant-radios,
@@ -180,6 +184,7 @@ fieldset.product-form__input .form__label {
   position: absolute;
   height: 1px;
   width: 1px;
+  
 }
 
 .product-form__input input[type='radio'] + label {
@@ -190,8 +195,8 @@ fieldset.product-form__input .form__label {
   color: rgb(var(--color-foreground));
   display: inline-block;
   margin: 0.7rem 0.5rem 0.2rem 0;
-  padding: 1rem 2rem;
-  font-size: 1.4rem;
+  padding: 1rem 1.2rem;
+  font-size: 1.8rem;
   letter-spacing: 0.1rem;
   line-height: 1;
   text-align: center;
@@ -283,6 +288,13 @@ fieldset.product-form__input .form__label {
   background-color: white;
   color: black;
   font-family: "Neue Montreal Bold";
+  border-color: black;
+  border-radius: 78px;
+}
+
+.product-form__submit.button--primary:after {
+  border-color: black;
+  border-radius: 78px;
 }
 
 /* Overrides */
@@ -324,6 +336,7 @@ a.product__text {
   word-break: break-word;
   margin-bottom: 1.5rem;
   font-family: "Neue Montreal Bold";
+  text-align: right;
 }
 
 .product__title > * {
@@ -352,6 +365,12 @@ a.product__text {
 
 .product .price__container {
   margin-bottom: 0.5rem;
+}
+
+.price__container {
+  display: block !important;
+  width: max-content;
+  margin-left: auto;
 }
 
 .product .price dl {

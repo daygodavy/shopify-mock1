@@ -60,9 +60,7 @@
 }
 
 .accordion__content-row-text {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  justify-self: center;
 }
