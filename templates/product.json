@@ -42,7 +42,7 @@
           "settings": {
             "heading": "MEASUREMENTS INFO",
             "icon": "ruler",
-            "content": "<div class=\"accordion__content-row-text\"> P2P: 24\" T2B: 26\" <\/div>\n\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4270\/2024\/files\/measurements_chart.png?v=1660191741\">",
+            "content": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4270\/2024\/files\/measurements_chart.png?v=1660191741\">\n\n<div class=\"accordion__content-row-text\"> Measurements are taken in inches. <\/div>",
             "page": ""
           }
         }

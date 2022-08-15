@@ -63,4 +63,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  /* remove margin-left after centered simage is imported */
+  margin-left: 1rem;
 }
