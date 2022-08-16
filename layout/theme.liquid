@@ -300,5 +300,26 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {% if canonical_url contains 'wotown-radio' %}
+      <style>
+        body {
+          background-image: url({{ 'alot_radio_BG.png' | asset_img_url: 'original' }}) !important;
+          background-size: cover !important;
+          background-repeat: no-repeat !important;
+        }
+
+        @media screen and (max-width: 500px) {
+          body {
+            background-size: contain !important;
+            background-repeat: repeat !important;
+          }
+        }
+
+        .gradient {
+          background-color: rgba(255, 255, 255, 0.7);
+        }
+      </style>
+    {% endif %}
   </body>
 </html>
