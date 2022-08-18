@@ -6,9 +6,41 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1660849682bab5c862": {
+      "type": "image-banner-OG",
+      "blocks": {
+        "1660849682a457fad4-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "APPLE MUSIC",
+            "button_link_1": "https:\/\/music.apple.com\/us\/playlist\/2000s-hip-hop-r-b-essentials\/pl.cfc176ebe118487e9e3b192eae75d0c1",
+            "button_style_secondary_1": false,
+            "button_label_2": "SPOTIFY",
+            "button_link_2": "https:\/\/open.spotify.com\/user\/spotify\/playlist\/37i9dQZF1DX1lHW2vbQwNN?si=CdM_WrvGQ4egFcGy71JeoQ",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1660849682a457fad4-2"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1660849682bab5c862"
   ]
 }
