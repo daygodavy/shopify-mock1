@@ -13,10 +13,10 @@
         "1660849682a457fad4-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "APPLE MUSIC",
-            "button_link_1": "https:\/\/music.apple.com\/us\/playlist\/2000s-hip-hop-r-b-essentials\/pl.cfc176ebe118487e9e3b192eae75d0c1",
+            "button_label_1": "",
+            "button_link_1": "https:\/\/music.apple.com\/us\/playlist\/alot13\/pl.u-NP24TjVENx1",
             "button_style_secondary_1": false,
-            "button_label_2": "SPOTIFY",
+            "button_label_2": "",
             "button_link_2": "https:\/\/open.spotify.com\/user\/spotify\/playlist\/37i9dQZF1DX1lHW2vbQwNN?si=CdM_WrvGQ4egFcGy71JeoQ",
             "button_style_secondary_2": false
           }
