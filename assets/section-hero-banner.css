@@ -21,7 +21,7 @@
 @media only screen and (min-width: 750px) {
   .hero-banner{
     /* NOTE: 100vh may cause issues on safari for iPhone due to url browser being at the bottom of the screen */
-    height: 120vh;
+    height: 140vh;
     padding: 2rem;
     /* background-size: contain; */
     /* background-repeat: no-repeat; */

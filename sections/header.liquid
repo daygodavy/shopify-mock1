@@ -404,6 +404,8 @@
         assign collection_four = section.settings.collection_four.title | handleize
         assign collection_five = section.settings.collection_five.title | handleize
         assign collection_six = section.settings.collection_six.title | handleize
+        assign collection_seven = section.settings.collection_seven.title | handleize
+        
       %}
       {%- if canonical_url contains 'collections' -%}
         {% liquid
@@ -419,8 +421,11 @@
             assign header_image = section.settings.collection_image_five
           elsif canonical_url contains collection_six
             assign header_image = section.settings.collection_image_six
+          elsif canonical_url contains collection_seven
+            assign header_image = section.settings.collection_image_seven
           endif
         %}
+
         
         {{ header_image | image_url: width: section.settings.width | image_tag:
           class: 'header__heading-logo',
@@ -446,6 +451,8 @@
             assign header_image = section.settings.collection_image_five
           elsif curr_collection == collection_six
             assign header_image = section.settings.collection_image_six
+          elsif canonical_url contains collection_seven
+            assign header_image = section.settings.collection_image_seven
           endif
         %}
         
@@ -931,6 +938,16 @@
       "type": "collection",
       "id": "collection_six",
       "label": "Collection six"
+    },
+    {
+      "type": "image_picker",
+      "id": "collection_image_seven",
+      "label": "Collection image seven"
+    },
+    {
+      "type": "collection",
+      "id": "collection_seven",
+      "label": "Collection seven"
     },
     {
       "type": "range",
