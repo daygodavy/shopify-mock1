@@ -328,7 +328,7 @@
           flex-direction: row;
         }
 
-        #Banner-template--15709054795976__1660849682bab5c862 > div.banner__content.banner__content--middle-center.page-width > div > div > a:nth-child(1) {
+        #Banner-template--15791473852616__166257509234f0a7d6 > div > div > div > a:nth-child(1) {
           background-color: rgb(252, 60, 68);
           padding-top: 1rem;
           padding-bottom: 1.4rem;
@@ -336,7 +336,7 @@
           padding-right: 5.1rem;
         }
 
-        #Banner-template--15709054795976__1660849682bab5c862 > div.banner__content.banner__content--middle-center.page-width > div > div > a:nth-child(2) {
+        #Banner-template--15791473852616__166257509234f0a7d6 > div > div > div > a:nth-child(2) {
           background-color: rgb(30, 215, 96);
           padding-left: 4.5rem;
           padding-right: 4.5rem;
@@ -358,5 +358,18 @@
 
       </style>
     {% endif %}
+
+    {% if canonical_url contains 'about' %}
+
+      {% comment %} hides image banner from info page {% endcomment %}
+      <style>
+        #Banner-template--15791473852616__166257509234f0a7d6 > div {
+          display: none;
+        }
+      </style>
+
+
+    {% endif %}
+
   </body>
 </html>

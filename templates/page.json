@@ -7,10 +7,10 @@
         "padding_bottom": 28
       }
     },
-    "1660849682bab5c862": {
+    "166257509234f0a7d6": {
       "type": "image-banner-OG",
       "blocks": {
-        "1660849682a457fad4-2": {
+        "1662575091a204a673-2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "",
@@ -23,7 +23,7 @@
         }
       },
       "block_order": [
-        "1660849682a457fad4-2"
+        "1662575091a204a673-2"
       ],
       "settings": {
         "image_overlay_opacity": 0,
@@ -41,6 +41,6 @@
   },
   "order": [
     "main",
-    "1660849682bab5c862"
+    "166257509234f0a7d6"
   ]
 }
